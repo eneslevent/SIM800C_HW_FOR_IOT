@@ -1,0 +1,804 @@
+EESchema Schematic File Version 4
+LIBS:GSM_IOT-cache
+EELAYER 29 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_GSM:SIM800C U?
+U 1 1 5D6B973E
+P 4300 6250
+F 0 "U?" H 4900 5200 50  0000 C CNN
+F 1 "SIM800C" H 4850 5100 50  0000 C CNN
+F 2 "RF_GSM:SIMCom_SIM800C" H 4850 5200 50  0001 C CNN
+F 3 "http://simcom.ee/documents/SIM800C/SIM800C_Hardware_Design_V1.05.pdf" H -350 3900 50  0001 C CNN
+	1    4300 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:SIM_Card J?
+U 1 1 5D6BD2E2
+P 6550 6050
+F 0 "J?" H 7180 6150 50  0000 L CNN
+F 1 "SIM_Card" H 7180 6059 50  0000 L CNN
+F 2 "" H 6550 6400 50  0001 C CNN
+F 3 " ~" H 6500 6050 50  0001 C CNN
+	1    6550 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MIC29302WU U?
+U 1 1 5D6C078E
+P 2450 2900
+F 0 "U?" H 2450 3267 50  0000 C CNN
+F 1 "MIC29302WU" H 2450 3176 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 2550 2650 50  0001 L CNN
+F 3 "https://www.digikey.com/product-detail/en/microchip-technology/MIC29302WU-TR/576-1125-1-ND/771851" H 2450 2900 50  0001 C CNN
+	1    2450 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D6CBF89
+P 1650 2950
+F 0 "C?" H 1742 2996 50  0000 L CNN
+F 1 "1uF" H 1742 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1650 2950 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10A105KA8NNNC/1276-1102-1-ND/3889188" H 1650 2950 50  0001 C CNN
+	1    1650 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D6CCB5A
+P 4050 2950
+F 0 "C?" H 4142 2996 50  0000 L CNN
+F 1 "100nF" H 4142 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4050 2950 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10A104KA8NNNC/1276-1857-1-ND/3889943" H 4050 2950 50  0001 C CNN
+	1    4050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5D6CD3BD
+P 3150 2950
+F 0 "R?" H 3218 2996 50  0000 L CNN
+F 1 "100k" H 3218 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3150 2950 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/yageo/RC0805FR-07100KL/311-100KCRCT-ND/730491" H 3150 2950 50  0001 C CNN
+	1    3150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5D6CD796
+P 3150 3250
+F 0 "R?" H 3218 3296 50  0000 L CNN
+F 1 "43k" H 3218 3205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3150 3250 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/yageo/RC0805FR-0743KL/311-43.0KCRCT-ND/730900" H 3150 3250 50  0001 C CNN
+	1    3150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5D6CDB9C
+P 3650 2950
+F 0 "C?" H 3741 2996 50  0000 L CNN
+F 1 "330uF" H 3741 2905 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 3650 2950 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/kemet/T490B337M006ATE800/399-11976-1-ND/5267679" H 3650 2950 50  0001 C CNN
+	1    3650 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5D6CE1C4
+P 4550 2950
+F 0 "R?" H 4618 2996 50  0000 L CNN
+F 1 "470" H 4618 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4550 2950 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/yageo/RC0603FR-07470RL/311-470HRCT-ND/730203" H 4550 2950 50  0001 C CNN
+	1    4550 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2800 1950 2800
+Wire Wire Line
+	1250 2800 1250 2850
+Wire Wire Line
+	1650 2850 1650 2800
+Connection ~ 1650 2800
+Wire Wire Line
+	1650 2800 1250 2800
+Wire Wire Line
+	2850 2800 3150 2800
+Wire Wire Line
+	4550 2800 4550 2850
+Wire Wire Line
+	4050 2850 4050 2800
+Connection ~ 4050 2800
+Wire Wire Line
+	4050 2800 4550 2800
+Wire Wire Line
+	3650 2850 3650 2800
+Connection ~ 3650 2800
+Wire Wire Line
+	3650 2800 4050 2800
+Wire Wire Line
+	3150 2850 3150 2800
+Connection ~ 3150 2800
+Wire Wire Line
+	3150 2800 3650 2800
+Wire Wire Line
+	3150 3150 3150 3100
+Wire Wire Line
+	3150 3100 3000 3100
+Wire Wire Line
+	3000 3100 3000 3000
+Wire Wire Line
+	3000 3000 2850 3000
+Connection ~ 3150 3100
+Wire Wire Line
+	3150 3100 3150 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5D6D4281
+P 1250 3150
+F 0 "#PWR?" H 1250 2900 50  0001 C CNN
+F 1 "GND" H 1255 2977 50  0000 C CNN
+F 2 "" H 1250 3150 50  0001 C CNN
+F 3 "" H 1250 3150 50  0001 C CNN
+	1    1250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6D497F
+P 1650 3150
+F 0 "#PWR?" H 1650 2900 50  0001 C CNN
+F 1 "GND" H 1655 2977 50  0000 C CNN
+F 2 "" H 1650 3150 50  0001 C CNN
+F 3 "" H 1650 3150 50  0001 C CNN
+	1    1650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6D4C6A
+P 2450 3300
+F 0 "#PWR?" H 2450 3050 50  0001 C CNN
+F 1 "GND" H 2455 3127 50  0000 C CNN
+F 2 "" H 2450 3300 50  0001 C CNN
+F 3 "" H 2450 3300 50  0001 C CNN
+	1    2450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6D5019
+P 3150 3450
+F 0 "#PWR?" H 3150 3200 50  0001 C CNN
+F 1 "GND" H 3155 3277 50  0000 C CNN
+F 2 "" H 3150 3450 50  0001 C CNN
+F 3 "" H 3150 3450 50  0001 C CNN
+	1    3150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6D53AA
+P 3650 3150
+F 0 "#PWR?" H 3650 2900 50  0001 C CNN
+F 1 "GND" H 3655 2977 50  0000 C CNN
+F 2 "" H 3650 3150 50  0001 C CNN
+F 3 "" H 3650 3150 50  0001 C CNN
+	1    3650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6D5628
+P 4050 3150
+F 0 "#PWR?" H 4050 2900 50  0001 C CNN
+F 1 "GND" H 4055 2977 50  0000 C CNN
+F 2 "" H 4050 3150 50  0001 C CNN
+F 3 "" H 4050 3150 50  0001 C CNN
+	1    4050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6D57DE
+P 4550 3150
+F 0 "#PWR?" H 4550 2900 50  0001 C CNN
+F 1 "GND" H 4555 2977 50  0000 C CNN
+F 2 "" H 4550 3150 50  0001 C CNN
+F 3 "" H 4550 3150 50  0001 C CNN
+	1    4550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3150 1250 3050
+Wire Wire Line
+	1650 3150 1650 3050
+Wire Wire Line
+	2450 3300 2450 3200
+Wire Wire Line
+	3150 3450 3150 3350
+Wire Wire Line
+	3650 3150 3650 3050
+Wire Wire Line
+	4050 3150 4050 3050
+Wire Wire Line
+	4550 3150 4550 3050
+Text GLabel 4850 2800 2    50   Input ~ 0
+VBAT
+Wire Wire Line
+	4850 2800 4550 2800
+Connection ~ 4550 2800
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5D6DFF51
+P 1050 1100
+F 0 "J?" H 968 775 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 968 866 50  0000 C CNN
+F 2 "" H 1050 1100 50  0001 C CNN
+F 3 "~" H 1050 1100 50  0001 C CNN
+	1    1050 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5D6E4E82
+P 5450 3050
+F 0 "C?" H 5541 3096 50  0000 L CNN
+F 1 "100uF" H 5541 3005 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C" H 5450 3050 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/kemet/T491C107M006AT/399-8339-1-ND/3472062" H 5450 3050 50  0001 C CNN
+	1    5450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D6E600E
+P 6050 3050
+F 0 "C?" H 6142 3096 50  0000 L CNN
+F 1 "1uF" H 6142 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6050 3050 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/samsung-electro-mechanics/CL10A105KA8NNNC/1276-1102-1-ND/3889188" H 6050 3050 50  0001 C CNN
+	1    6050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D6E64D8
+P 6550 3050
+F 0 "C?" H 6642 3096 50  0000 L CNN
+F 1 "33pF" H 6642 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6550 3050 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/kemet/C0603C330J5GACTU/399-1055-1-ND/411330" H 6550 3050 50  0001 C CNN
+	1    6550 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D6E6775
+P 7000 3050
+F 0 "C?" H 7092 3096 50  0000 L CNN
+F 1 "10pF" H 7092 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7000 3050 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/kemet/C0603C100J5GACTU/399-1049-1-ND/411324" H 7000 3050 50  0001 C CNN
+	1    7000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 5D6E70A0
+P 7500 3050
+F 0 "D?" V 7454 3129 50  0000 L CNN
+F 1 "D_Zener" V 7545 3129 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 7500 3050 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/on-semiconductor/MMSZ5231BT1G/MMSZ5231BT1GOSCT-ND/964561" H 7500 3050 50  0001 C CNN
+	1    7500 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 3150 5450 3300
+Wire Wire Line
+	5450 3300 6050 3300
+Wire Wire Line
+	7500 3300 7500 3200
+Wire Wire Line
+	7500 2900 7500 2800
+Wire Wire Line
+	7500 2800 7000 2800
+Wire Wire Line
+	5450 2800 5450 2950
+Wire Wire Line
+	6050 2950 6050 2800
+Connection ~ 6050 2800
+Wire Wire Line
+	6050 2800 5450 2800
+Wire Wire Line
+	6550 2950 6550 2800
+Connection ~ 6550 2800
+Wire Wire Line
+	6550 2800 6050 2800
+Wire Wire Line
+	7000 2950 7000 2800
+Connection ~ 7000 2800
+Wire Wire Line
+	7000 2800 6550 2800
+Wire Wire Line
+	6050 3150 6050 3300
+Connection ~ 6050 3300
+Wire Wire Line
+	6050 3300 6550 3300
+Wire Wire Line
+	6550 3150 6550 3300
+Connection ~ 6550 3300
+Wire Wire Line
+	6550 3300 7000 3300
+Wire Wire Line
+	7000 3150 7000 3300
+Connection ~ 7000 3300
+Wire Wire Line
+	7000 3300 7500 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5D6F111A
+P 6550 3500
+F 0 "#PWR?" H 6550 3250 50  0001 C CNN
+F 1 "GND" H 6555 3327 50  0000 C CNN
+F 2 "" H 6550 3500 50  0001 C CNN
+F 3 "" H 6550 3500 50  0001 C CNN
+	1    6550 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 6600 2550 2    50   Input ~ 0
+VBAT
+Wire Wire Line
+	6600 2550 6550 2550
+Wire Wire Line
+	6550 2550 6550 2800
+Wire Wire Line
+	6550 3300 6550 3500
+Text GLabel 4550 5000 2    50   Input ~ 0
+VBAT
+Wire Wire Line
+	4500 5150 4500 5000
+Wire Wire Line
+	4500 5000 4550 5000
+$Comp
+L power:GND #PWR?
+U 1 1 5D6F7E80
+P 4300 7500
+F 0 "#PWR?" H 4300 7250 50  0001 C CNN
+F 1 "GND" H 4305 7327 50  0000 C CNN
+F 2 "" H 4300 7500 50  0001 C CNN
+F 3 "" H 4300 7500 50  0001 C CNN
+	1    4300 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 7350 4300 7500
+NoConn ~ 3500 7050
+NoConn ~ 3500 7150
+NoConn ~ 5100 7050
+NoConn ~ 5100 7150
+NoConn ~ 5100 6350
+NoConn ~ 5100 6450
+NoConn ~ 5100 6550
+NoConn ~ 5100 5450
+NoConn ~ 3500 6650
+NoConn ~ 3500 6250
+NoConn ~ 3500 6150
+NoConn ~ 5100 5550
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5D7021D5
+P 5650 5150
+F 0 "J?" H 5750 5125 50  0000 L CNN
+F 1 "Conn_Coaxial" H 5750 5034 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_901-144_Vertical" H 5650 5150 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-1814832-1/A97594-ND/1755982" H 5650 5150 50  0001 C CNN
+	1    5650 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 5350 5300 5350
+Wire Wire Line
+	5300 5350 5300 5150
+Wire Wire Line
+	5300 5150 5450 5150
+$Comp
+L power:GND #PWR?
+U 1 1 5D706DEB
+P 5650 5400
+F 0 "#PWR?" H 5650 5150 50  0001 C CNN
+F 1 "GND" H 5655 5227 50  0000 C CNN
+F 2 "" H 5650 5400 50  0001 C CNN
+F 3 "" H 5650 5400 50  0001 C CNN
+	1    5650 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 5350 5650 5400
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 5D379BBB
+P 3000 6700
+F 0 "Q?" H 2950 6550 50  0000 L CNN
+F 1 "2N3904" H 2750 6850 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3200 6625 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/on-semiconductor/2N3904BU/2N3904FS-ND/1413" H 3000 6700 50  0001 L CNN
+	1    3000 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5DFC1F40
+P 2200 6700
+F 0 "R?" V 2100 6650 50  0000 L CNN
+F 1 "1K" V 2300 6650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2200 6700 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/yageo/RC0805FR-071KL/311-1.00KCRCT-ND/730391" H 2200 6700 50  0001 C CNN
+	1    2200 6700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5D379BBD
+P 2550 6700
+F 0 "D?" H 2650 6600 50  0000 R CNN
+F 1 "LED_GREEN" H 2750 6800 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" V 2550 6700 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/kingbright/APTR3216CGCK/754-1167-1-ND/1747884" V 2550 6700 50  0001 C CNN
+	1    2550 6700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2800 6700 2650 6700
+Wire Wire Line
+	2450 6700 2300 6700
+$Comp
+L power:GND #PWR?
+U 1 1 5D7496F2
+P 3100 7050
+F 0 "#PWR?" H 3100 6800 50  0001 C CNN
+F 1 "GND" H 3105 6877 50  0000 C CNN
+F 2 "" H 3100 7050 50  0001 C CNN
+F 3 "" H 3100 7050 50  0001 C CNN
+	1    3100 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 6900 3100 7050
+Wire Wire Line
+	3100 6500 3100 6450
+Wire Wire Line
+	3100 6450 3500 6450
+Text GLabel 1850 6700 0    50   Input ~ 0
+PWRKEY
+Wire Wire Line
+	1850 6700 2100 6700
+NoConn ~ 3500 5750
+NoConn ~ 3500 5650
+NoConn ~ 3500 5550
+NoConn ~ 3500 5450
+NoConn ~ 3500 5350
+Text GLabel 2500 5850 0    50   Input ~ 0
+SIMCOMTX
+Text GLabel 2500 5950 0    50   Input ~ 0
+SIMCOMRX
+$Comp
+L Device:R_Small_US R?
+U 1 1 5D75A4E5
+P 2750 6100
+F 0 "R?" H 2800 6150 50  0000 L CNN
+F 1 "5.6K" H 2800 6050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2750 6100 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/yageo/RC0805FR-071KL/311-1.00KCRCT-ND/730391" H 2750 6100 50  0001 C CNN
+	1    2750 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D75CCFD
+P 2750 6200
+F 0 "#PWR?" H 2750 5950 50  0001 C CNN
+F 1 "GND" H 2755 6027 50  0000 C CNN
+F 2 "" H 2750 6200 50  0001 C CNN
+F 3 "" H 2750 6200 50  0001 C CNN
+	1    2750 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5D760D55
+P 3150 5850
+F 0 "R?" V 3050 5850 50  0000 L CNN
+F 1 "1K" V 3050 5700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3150 5850 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/yageo/RC0805FR-071KL/311-1.00KCRCT-ND/730391" H 3150 5850 50  0001 C CNN
+	1    3150 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 5D7611A6
+P 3150 5950
+F 0 "R?" V 3250 6000 50  0000 L CNN
+F 1 "1K" V 3250 5850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3150 5950 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/yageo/RC0805FR-071KL/311-1.00KCRCT-ND/730391" H 3150 5950 50  0001 C CNN
+	1    3150 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 5850 3250 5850
+Wire Wire Line
+	3500 5950 3250 5950
+Wire Wire Line
+	3050 5850 2500 5850
+Wire Wire Line
+	3050 5950 2750 5950
+Wire Wire Line
+	2750 6000 2750 5950
+Connection ~ 2750 5950
+Wire Wire Line
+	2750 5950 2500 5950
+$Comp
+L Power_Protection:SP0505BAJT D?
+U 1 1 5D772DA3
+P 5850 7100
+F 0 "D?" H 6155 7146 50  0000 L CNN
+F 1 "ESDA6V1-5W6" H 6155 7055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 6150 7050 50  0001 L CNN
+F 3 "https://www.digikey.com/product-detail/en/stmicroelectronics/ESDA6V1-5W6/497-6634-1-ND/1865436" H 5975 7225 50  0001 C CNN
+	1    5850 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5D6E283F
+P 4300 4900
+F 0 "C?" H 4391 4946 50  0000 L CNN
+F 1 "4.7uF" H 4391 4855 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.8" H 4300 4900 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/EEE-FK1J4R7R/PCE3824CT-ND/766200" H 4300 4900 50  0001 C CNN
+	1    4300 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6E514C
+P 4500 4650
+F 0 "#PWR?" H 4500 4400 50  0001 C CNN
+F 1 "GND" H 4505 4477 50  0000 C CNN
+F 2 "" H 4500 4650 50  0001 C CNN
+F 3 "" H 4500 4650 50  0001 C CNN
+	1    4500 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5150 4300 5000
+Wire Wire Line
+	4300 4800 4300 4650
+Wire Wire Line
+	4300 4650 4500 4650
+NoConn ~ 4100 5150
+Wire Wire Line
+	2050 3000 1950 3000
+Wire Wire Line
+	1950 3000 1950 2800
+Connection ~ 1950 2800
+Wire Wire Line
+	1950 2800 1650 2800
+$Comp
+L Regulator_Switching:LM2576S-5 U?
+U 1 1 5D6EE29C
+P 2900 1100
+F 0 "U?" H 2900 1467 50  0000 C CNN
+F 1 "LM2576S-5" H 2900 1376 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 2900 850 50  0001 L CIN
+F 3 "https://www.digikey.com/product-detail/en/texas-instruments/LM2576SX-5.0-NOPB/LM2576SX-5.0-NOPBCT-ND/3440106" H 2900 1100 50  0001 C CNN
+	1    2900 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6EEAC3
+P 2250 1300
+F 0 "#PWR?" H 2250 1050 50  0001 C CNN
+F 1 "GND" H 2255 1127 50  0000 C CNN
+F 2 "" H 2250 1300 50  0001 C CNN
+F 3 "" H 2250 1300 50  0001 C CNN
+	1    2250 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1200 2250 1200
+Wire Wire Line
+	2250 1200 2250 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5D6F0C84
+P 2900 1550
+F 0 "#PWR?" H 2900 1300 50  0001 C CNN
+F 1 "GND" H 2905 1377 50  0000 C CNN
+F 2 "" H 2900 1550 50  0001 C CNN
+F 3 "" H 2900 1550 50  0001 C CNN
+	1    2900 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1400 2900 1550
+Text GLabel 1050 2800 0    50   Input ~ 0
+5v
+Wire Wire Line
+	1050 2800 1250 2800
+Connection ~ 1250 2800
+$Comp
+L Device:CP1_Small C?
+U 1 1 5D6FA65B
+P 1850 1150
+F 0 "C?" H 1941 1196 50  0000 L CNN
+F 1 "100uF" H 1941 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 1850 1150 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/nichicon/UWT1H101MNL1GS/493-2226-1-ND/590201" H 1850 1150 50  0001 C CNN
+	1    1850 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5D6FB5D7
+P 1250 2950
+F 0 "C?" H 1341 2996 50  0000 L CNN
+F 1 "100uF" H 1341 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 1250 2950 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/nichicon/UWT1H101MNL1GS/493-2226-1-ND/590201" H 1250 2950 50  0001 C CNN
+	1    1250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6FD8F7
+P 1850 1300
+F 0 "#PWR?" H 1850 1050 50  0001 C CNN
+F 1 "GND" H 1855 1127 50  0000 C CNN
+F 2 "" H 1850 1300 50  0001 C CNN
+F 3 "" H 1850 1300 50  0001 C CNN
+	1    1850 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 1250 1850 1300
+Wire Wire Line
+	1850 1050 1850 1000
+Wire Wire Line
+	1850 1000 2400 1000
+$Comp
+L Diode:1N5822 D?
+U 1 1 5D70192D
+P 3650 1450
+F 0 "D?" V 3604 1529 50  0000 L CNN
+F 1 "1N5822" V 3695 1529 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 3650 1275 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/stmicroelectronics/1N5822RL/497-14742-1-ND/4868910" H 3650 1450 50  0001 C CNN
+	1    3650 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 1200 3650 1200
+Wire Wire Line
+	3650 1200 3650 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5D705B72
+P 3650 1700
+F 0 "#PWR?" H 3650 1450 50  0001 C CNN
+F 1 "GND" H 3655 1527 50  0000 C CNN
+F 2 "" H 3650 1700 50  0001 C CNN
+F 3 "" H 3650 1700 50  0001 C CNN
+	1    3650 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1600 3650 1700
+$Comp
+L Device:L L?
+U 1 1 5D6F81A6
+P 4050 1200
+F 0 "L?" V 4150 1200 50  0000 C CNN
+F 1 "100uH" V 4000 1200 50  0000 C CNN
+F 2 "Inductor_SMD:L_12x12mm_H8mm" H 4050 1200 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/wurth-electronics-inc/7447709101/732-1248-1-ND/1639309" H 4050 1200 50  0001 C CNN
+	1    4050 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5D6F9B00
+P 4450 1450
+F 0 "C?" H 4541 1496 50  0000 L CNN
+F 1 "1000uF" H 4541 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 4450 1450 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/nichicon/UWT0J102MNL1GS/493-2160-1-ND/590135" H 4450 1450 50  0001 C CNN
+	1    4450 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D6FB6E4
+P 4450 1700
+F 0 "#PWR?" H 4450 1450 50  0001 C CNN
+F 1 "GND" H 4455 1527 50  0000 C CNN
+F 2 "" H 4450 1700 50  0001 C CNN
+F 3 "" H 4450 1700 50  0001 C CNN
+	1    4450 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1550 4450 1700
+Wire Wire Line
+	3650 1200 3900 1200
+Connection ~ 3650 1200
+Wire Wire Line
+	4200 1200 4450 1200
+Wire Wire Line
+	4450 1200 4450 1350
+Wire Wire Line
+	3400 1000 4450 1000
+Wire Wire Line
+	4450 1000 4450 1200
+Connection ~ 4450 1200
+Text GLabel 4800 1000 2    50   Input ~ 0
+5v
+Wire Wire Line
+	4450 1000 4800 1000
+Connection ~ 4450 1000
+Wire Wire Line
+	1850 1000 1250 1000
+Connection ~ 1850 1000
+$Comp
+L power:GND #PWR?
+U 1 1 5D709763
+P 1350 1300
+F 0 "#PWR?" H 1350 1050 50  0001 C CNN
+F 1 "GND" H 1355 1127 50  0000 C CNN
+F 2 "" H 1350 1300 50  0001 C CNN
+F 3 "" H 1350 1300 50  0001 C CNN
+	1    1350 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1100 1350 1100
+Wire Wire Line
+	1350 1100 1350 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5D700261
+P 5850 7375
+F 0 "#PWR?" H 5850 7125 50  0001 C CNN
+F 1 "GND" H 5855 7202 50  0000 C CNN
+F 2 "" H 5850 7375 50  0001 C CNN
+F 3 "" H 5850 7375 50  0001 C CNN
+	1    5850 7375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 7300 5850 7375
+$EndSCHEMATC
